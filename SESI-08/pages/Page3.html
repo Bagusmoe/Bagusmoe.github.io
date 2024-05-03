@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+     <link rel="stylesheet" href="../css/LandingPage.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+     <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"/>
+ 
+  </head>
+  <body>
+     <header>
+      <div class="navbar-container">
+        <h1 class="logo">RESU<span class="me">ME</span></h1>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="../index.html">Profil</a></li>
+            <li><a href="./Page2.html">Experiences</a></li>
+            <li><a href="./Page3.html">Education</a></li>
+            <li><a href="./Page4.html">Skills</a></li>
+            <li><a href="./Page5.html">Interest</a></li>
+            <li><a href="./Page6.html">Award</a></li>
+          </ul>
+        </nav>
+        <div class="barsbtn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../index.html">Profil</a></li>
+            <li><a href="./Page2.html">Experiences</a></li>
+            <li><a href="./Page3.html">Education</a></li>
+            <li><a href="./Page4.html">Skills</a></li>
+            <li><a href="./Page5.html">Interest</a></li>
+            <li><a href="./Page6.html">Award</a></li>
+          </ul>
+        </div>    
+        </div>
+      <script>
+      const toggleBtn = document.querySelector(".barsbtn")
+      const toggleBtnIcon = document.querySelector(".barsbtn i")
+      const dropDownMenu = document.querySelector(".dropdown")
+      
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open")
+        const isOpen = dropDownMenu.classList.contains("open")
+        toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars"
+      }
+      </script>
+    </header>
+    <main class="page3">
+     <article class="article-page3">
+       <h1 class="pendidikan">Pendidikan</h1>
+        <h2>SMK N 3 Tegal</h2>
+         <h3>Teknik Kendaraan Ringan (2009 - 2012)</h3>
+        <h2>UNITED TRACTORS SCHOOL</h2>
+         <h3>Welder (2012 - 2013)</h3>
+      </article>
+      <aside>
+        <img src="../img/Photoprof.png" alt="Bagus Moehamad Abduh" />
+          <h2>Bagus Moehamad Abduh</h2>
+        <div class="social-media">
+            <h3>Kontak</h3>
+          <ul>
+            <li>
+              <a href="https://wa.me/6282324801277"><b class="whatsapp ">Whatsapp</b></a>
+            </li>
+            <li>
+              <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=baguzt.abduh@gmail.com"><b class="Email">Email</b></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bagusmoehamad?igsh=czZ4aXJ0NXhpaXFn"><b class="instagram">Instagram</b></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/bagus-moehamad-abduh-494585247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><b class="linkedin">LinkedIn</b></a>
+            </li>
+          </ul>
+      </aside>
+    </main>
+    <footer>
+       <!---- <h2><a href="dicoding.com">@Dicoding.com</a></h2> --->
+    </footer>
+  </body>
+</html>
